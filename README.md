@@ -11,5 +11,3 @@
 # Usage
 
 ### Clone the repository and "Load Unpacked" @ "chrome://extensions"
-#### OR
-### Download on the Chrome webstore: COMING SOON
