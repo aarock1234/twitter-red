@@ -1,0 +1,24 @@
+{
+	"manifest_version": 3,
+	"name": "Twitter Red",
+	"version": "1.0.0",
+	"icons": {
+		"16": "icon/icon.png",
+		"48": "icon/icon.png",
+		"128": "icon/icon.png"
+	},
+	"content_scripts": [
+		{
+			"js": ["content.js"],
+			"matches": ["https://*.twitter.com/*"]
+		}
+	],
+	"web_accessible_resources": [
+		{
+			"resources": ["src/intercept.js"],
+			"matches": ["https://*.twitter.com/*"]
+		}
+	],
+	"permissions": ["tabs", "activeTab"],
+	"action": {}
+}
