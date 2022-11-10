@@ -4,7 +4,7 @@ XMLHttpRequest.prototype.send = function () {
 	const originalOnReadyStateChange = this.onreadystatechange;
 
 	this.onreadystatechange = function () {
-		if (this.readyState === 4) {
+		if (this.readyState && this.readyState === 4) {
 			if (this.getResponseHeader('content-type')?.includes('application/json')) {
 				let response;
 				try {
